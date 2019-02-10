@@ -16,6 +16,7 @@ description = """A process pool implementation in Twisted Matrix and AMP"""
 long_description = open('README').read()
 
 setup(
+    version="17.12.0",
     name = "ampoule",
     author = "Valentino Volonghi",
     author_email = "dialtone@gmail.com",
@@ -24,7 +25,7 @@ setup(
     description = description,
     long_description = long_description,
     license = "MIT License",
-    install_requires=install_requires + ['incremental'],
+    #install_requires=install_requires + ['incremental'],
     url="https://github.com/glyph/ampoule",
     classifiers = [
         'Development Status :: 4 - Beta',
@@ -37,8 +38,8 @@ setup(
     ],
     packages=["ampoule", "ampoule.test", "twisted"],
     package_data={'twisted': ['plugins/ampoule_plugin.py']},
-    use_incremental=True,
-    setup_requires=['incremental'],
+    #use_incremental=True,
+    #setup_requires=['incremental'],
     include_package_data = True,
     zip_safe=False
 )
